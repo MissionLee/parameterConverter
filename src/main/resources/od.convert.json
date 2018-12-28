@@ -1,0 +1,53 @@
+{
+  "executorTypeAliases": {
+    "universal": {
+      "currentUser": "pers.missionlee.parameterconverter.converter.builtin.universal.CurrentUserConverter"
+    },
+    "targeted": {
+      "kg2k": "pers.missionlee.parameterconverter.converter.builtin.targeted.Kg2gConverter",
+      "timestamp2datetime": "pers.missionlee.parameterconverter.converter.builtin.targeted.Timestamp2DatetimeConverter"
+    },
+    "tip": "type aliases for executor"
+  },
+  "namedExecutorsConfiguration": {
+    "sample": {
+      "universal": [
+        "put Type Aliases of universalExecutor here,and than it will be added to a Executor named"
+      ],
+      "targeted": {
+        "sampleTargetedExecutor": [
+          "key1",
+          "key2"
+        ],
+        "tip": "targeted executor - sampleTargetedExecutor will be use to deal with key1 and key2 when you use the namedExecutor - sample",
+        "tip2": "sample will be automatically ignored bu configuration builder,that means you can not naming an executor with sample "
+      },
+      "settings": {
+        "executorType": "set the executor you want, if do not . DefaultMappedExecutor will be Used"
+      }
+    },
+    "default": {
+      "universal": [
+        "currentUser"
+      ],
+      "targeted": {
+        "kg2k": [
+          "weight",
+          "totalWeight"
+        ]
+      },
+      "settings": {
+        "executorType": "",
+        "converterInputHandler": ""
+      },
+      "tip": "defaultConfiguration will be added to all the other namedExecutorConfiguration. Please handle with care"
+    },
+    "auctions": {
+      "targeted": {
+        "timestamp2datetime": [
+          "endTime"
+        ]
+      }
+    }
+  }
+}
