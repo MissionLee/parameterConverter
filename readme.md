@@ -1,5 +1,7 @@
 # ParameterConverter
 
+tip: 架构图使用markdown mermaid 插件语法书写，如果您进能看到文字，请在您的Markdown浏览器中安装相关插件以支持mermaid 
+
 ## 项目架构 - 第二版
 > 配置
 ```mermaid
@@ -11,7 +13,7 @@ ExecutorConfiguration-->|核心成员|defaultConfiguration
 ExecutorConfiguration-->|核心成员|inputWrapperHandler
 universalConverterMap-->存放集合处理器
 targetedConverterMap-->按照名称存放参数处理器
-converterConfigurations-->按照名称存放配置s
+converterConfigurations-->按照名称存放配置
 defaultConfiguration-->存放默认配置
 inputWrapperHandler-->存放输入转换器
 ```
